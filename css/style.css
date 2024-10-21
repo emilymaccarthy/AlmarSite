@@ -1,0 +1,630 @@
+body {
+    background-color: #ffffff;
+    
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+h1{
+    font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+    color: #bb6316;
+    font-size: 47px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+
+}
+
+h2{
+    font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+    color: #E67817;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #011C3E;
+    font-size: 22px;
+    
+    
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #011C3E;
+    font-size: 20px;
+    width: 80%; /* Set width to 90% of viewport width */
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+ 
+
+}
+
+/*navigation bar*/
+
+nav{
+    background: #184D91;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: 70px;
+    line-height: 65px;
+}
+
+nav .wrapper{
+    padding: 0 30px;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    margin-bottom: 40px; 
+    position: relative;
+}
+
+.wrapper #logo2 a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper #logo2 {
+    padding: 0 !important;
+    height: 65px;
+}
+
+.wrapper .nav_links{
+    display: inline-flex;
+}
+
+.nav_links li {
+    list-style: none;
+}
+
+.nav_links li a{
+    color: #FFFFFB; /* Set text color to white */
+    text-decoration: none;
+    font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 25px;
+    padding: 9px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav_links li a:hover{
+    color: #E67817; /* Set text color to white */
+   
+}
+
+
+
+.nav_links li:hover .box{
+    opacity: 1;
+    visibility: visible;
+    top: 70px;
+    transition: all 0.3s easee;
+}
+
+
+
+.box {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;   
+
+}
+
+.box .content{
+    background: #113969;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+
+.content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+    padding-left: 30px;
+}
+
+.content .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content .row header{
+    color: #7da6d8;
+    font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+    font-size: 20px;
+}
+
+.content .row .drop_menu{
+    margin-left: -40px;
+    border-left: 1px solid rgba(255,255,255,0,09);
+}
+
+.content .row:nth-child(1), .content .row:nth-child(2){
+    border-left: 0px;
+}
+
+
+.row .drop_menu li{
+    padding: 0 20px;
+}
+
+.row .drop_menu li a{
+    padding: 0 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: block;
+}
+
+.row .drop_menu li a:hover{
+    color: #E67817;;
+}
+
+
+
+
+/* home page*/
+
+.landing{
+    margin-top: 80px;
+    display: flex;
+   
+    flex-direction: column;
+  
+}
+
+.landing p{
+    width: 82%;
+    margin-left: 9%;
+
+
+}
+
+.img_container{
+    display: flex;
+    width: 100%;
+    overflow-x: auto; 
+    padding: 10px 0 10px 0;
+}
+
+.img_container img {
+    width: 100%; /* Set image width to 100% of parent container */
+    display: block; /* Ensure images don't have extra spacing */
+    height: 450px;
+}
+
+
+
+
+/* productos*/
+
+
+.nov_cont{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.div_nov{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.div_nov .n1{
+    
+    padding-right: 30px;
+    padding-bottom: 20px;
+    height: min-content;
+}
+
+.div_nov .n1 h2{
+    height: max-content;
+    padding-bottom: 20px;
+}
+
+.div_nov .n1 h3{
+    
+    padding-bottom: 5px;
+}
+
+.div_nov .n1 p{
+    width: auto;
+    
+}
+
+.productos{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.productos section{
+    margin-bottom: 40px;
+}
+
+.productos .sections{
+    display: flex;
+    width: 82%;
+    flex-direction: column;
+    margin-left: 9%;
+    margin-top: 80px;
+}
+
+.productos video{
+    display: block;
+    width: 85%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.container .productos .sections section > *{
+    padding-bottom: 20px;
+}
+
+.productos #telas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow-x: auto; 
+}
+
+.productos p{
+    width: 100%;
+    text-align: left;
+    padding: 0; /* Reset padding */
+    margin: 0; 
+}
+
+
+
+.bolsas_img{
+    display: flex; /* Use flexbox for layout */
+    padding: 10px 0 10px 0;
+
+}
+
+.bolsas_img img{
+    max-width: 50%; /* Limit each image to occupy half of the container width */
+    overflow-x: hidden;
+
+}
+
+.tabla_caracteristicas_img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#aislantes{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.aislantes_container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    
+}
+
+.aislantes_txt{
+    min-width: 50%;
+    max-width: 90%;
+    height: 200px;
+    align-items: flex-end;
+    flex-grow: 1;
+    display: flex;
+    padding-left: 10px;
+}
+
+.aislantes_img{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    flex-shrink: 0;
+    width: fit-content;
+    justify-content: flex-start;
+    
+}
+
+.aislantes_img img {
+    max-width: 100%; /* Ensures images resize proportionally */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px;
+    padding: 2px;
+    
+} 
+
+#img_ais1{
+    height: max-content;
+}
+
+#img_ais2{
+    height: 150px;
+}
+
+#img_ais3{
+    height: 100px;
+}
+
+
+
+/* grupo almar*/
+
+.grupo_almar{
+    margin-top: 80px;
+    width: 82%;
+    margin-left: 9%;
+    
+}
+
+.grupo_almar section{
+    margin-bottom: 40px;
+}
+
+.grupo_almar p, h1, h2, h3{
+    width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.grupo_almar h2{
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.grupo_almar h3{
+    padding-bottom: 25px;
+    padding-top: 5px;
+}
+
+.grupo_almar #historia img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grupo_almar #historia #img_ga{
+    width: 100%;
+}
+
+
+#historia #vid_a{
+    position: relative;
+    display: block;
+    height: 500px;
+    width: auto; /* Adjust size of video wrapper */
+    margin-right: auto; /* Adjust spacing */
+    margin-left: auto;
+}
+
+
+.almar_trade img{
+    height: 80px;
+    padding-right: 20px;
+}
+
+.almar_trade{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
+.fundacion_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.fundacion_logo img{
+    height: 80px;
+    padding-right: 20px;
+}
+
+
+
+.fotos_vino{
+    display: flex;
+    flex-direction: row;
+    height:500px;
+    width: auto;
+    justify-content: space-around;
+}
+
+.fotos_vino img{
+    
+    height:500px;
+    width: auto;
+}
+
+
+#historia video{
+    height: 80%;
+}
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 400px;
+   
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.swiper-slide img {
+    display: block;
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+.fotos-fundacion {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .fund_fotos {
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 500px;
+  }
+
+  .fund_fotos img {
+    display: block;
+    width: auto;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+#fundacion a{
+    text-decoration: none;
+    color: rgb(15, 15, 106);
+}
+
+#fundacion a:hover h2{
+    color: rgb(15, 15, 106);
+}
+
+
+
+
+/* la fabrica */
+
+.la_fabrica{
+    
+    margin-top: 80px;
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+   
+}
+
+.la_fabrica p{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.la_fabrica img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.la_fabrica .videos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+   
+    
+}
+
+.la_fabrica video{
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+   
+}
+
+
+
+
+/* footer*/
+.footer {
+    background-color: #184D91; /* Set background color for the footer */
+    width: 100%;
+    padding-top: 20px; /* Add padding top and bottom */
+    margin-bottom: 0!important;
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distribute items evenly */
+}
+
+.footer-item {
+    width: 300px;
+}
+
+.footer-item p {
+    color: white; /* Set text color */
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: "Gruppo", sans-serif;
+    font-weight:300;
+    font-style: normal;
+}
